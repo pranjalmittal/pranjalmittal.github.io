@@ -1,1 +1,195 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pranjal Mittal — Software Developer</title>
+  <meta name="description" content="Personal portfolio of Pranjal Mittal, software developer. Java, Go, CLI tools, and open source." />
+  <meta name="author" content="Pranjal Mittal" />
+  <meta property="og:title" content="Pranjal Mittal — Software Developer" />
+  <meta property="og:description" content="Personal portfolio: projects, skills, and contact." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --bg-2: #121826;
+      --card: #161d2e;
+      --text: #e6e9f2;
+      --muted: #9aa4bf;
+      --accent: #6ea8fe;
+      --accent-2: #a78bfa;
+      --border: #24304a;
+      --radius: 14px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+    header {
+      position: sticky; top: 0; z-index: 10;
+      backdrop-filter: blur(10px);
+      background: rgba(11, 15, 25, 0.7);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .brand { font-weight: 700; letter-spacing: 0.5px; }
+    .nav-links { display: flex; gap: 20px; font-size: 14px; }
+    .nav-links a { color: var(--muted); }
+    .nav-links a:hover { color: var(--text); text-decoration: none; }
+    .hero { padding: 96px 0 64px; text-align: center; }
+    .avatar {
+      width: 112px; height: 112px; border-radius: 50%;
+      margin: 0 auto 24px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 40px; font-weight: 700; color: #0b0f19;
+      box-shadow: 0 0 0 4px var(--bg), 0 0 0 6px var(--border);
+    }
+    h1 { font-size: 44px; margin: 0 0 8px; letter-spacing: -0.5px; }
+    .tagline { font-size: 18px; color: var(--muted); margin: 0 0 28px; }
+    .cta { display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+    .btn {
+      display: inline-block; padding: 10px 18px; border-radius: 10px;
+      font-size: 14px; font-weight: 600; border: 1px solid var(--border);
+      background: var(--card); color: var(--text);
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); border-color: var(--accent); text-decoration: none; }
+    .btn.primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #0b0f19; border: none; }
+    section { padding: 56px 0; }
+    h2 { font-size: 26px; margin: 0 0 24px; }
+    .grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 22px;
+      transition: border-color 0.15s ease, transform 0.15s ease;
+    }
+    .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .card h3 { margin: 0 0 6px; font-size: 18px; }
+    .card p { margin: 0 0 14px; color: var(--muted); font-size: 14px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag {
+      font-size: 12px; padding: 3px 9px; border-radius: 999px;
+      background: rgba(110, 168, 254, 0.12); color: var(--accent);
+      border: 1px solid rgba(110, 168, 254, 0.25);
+    }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skill {
+      padding: 8px 14px; border-radius: 10px; background: var(--card);
+      border: 1px solid var(--border); font-size: 14px;
+    }
+    .about { color: var(--muted); max-width: 720px; }
+    footer {
+      padding: 32px 0; border-top: 1px solid var(--border);
+      color: var(--muted); font-size: 13px; text-align: center;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 34px; }
+      .hero { padding: 64px 0 40px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">Pranjal Mittal</div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="avatar">PM</div>
+      <h1>Pranjal Mittal</h1>
+      <p class="tagline">Software developer · Java · Go · CLI tools · open source</p>
+      <div class="cta">
+        <a class="btn primary" href="https://github.com/pranjalmittal" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="#projects">View projects</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p class="about">
+        I'm a software developer based in India. I enjoy building command-line tools,
+        libraries, and developer-facing utilities. I work mainly with Java and Go, and
+        I contribute to and fork open-source projects including Apache Airflow, Telegraf,
+        and RestFB.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>CLI-Agent</h3>
+          <p>Natural language command line agent written in Java.</p>
+          <div class="tags">
+            <span class="tag">Java</span>
+            <span class="tag">CLI</span>
+          </div>
+          <p style="margin-top:14px;"><a href="https://github.com/pranjalmittal/CLI-Agent" target="_blank" rel="noopener">View on GitHub →</a></p>
+        </article>
+        <article class="card">
+          <h3>uuid</h3>
+          <p>Go package for UUIDs based on RFC 4122 and DCE 1.1.</p>
+          <div class="tags">
+            <span class="tag">Go</span>
+            <span class="tag">Library</span>
+          </div>
+          <p style="margin-top:14px;"><a href="https://github.com/pranjalmittal/uuid" target="_blank" rel="noopener">View on GitHub →</a></p>
+        </article>
+        <article class="card">
+          <h3>substrate</h3>
+          <p>Agent substrate: the core system.</p>
+          <div class="tags">
+            <span class="tag">Systems</span>
+          </div>
+          <p style="margin-top:14px;"><a href="https://github.com/pranjalmittal/substrate" target="_blank" rel="noopener">View on GitHub →</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span class="skill">Java</span>
+        <span class="skill">Go</span>
+        <span class="skill">CLI tools</span>
+        <span class="skill">Git</span>
+        <span class="skill">Open source</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="about">
+        Find me on GitHub. Open to collaboration and interesting problems.
+      </p>
+      <div class="cta" style="justify-content:flex-start;">
+        <a class="btn primary" href="https://github.com/pranjalmittal" target="_blank" rel="noopener">github.com/pranjalmittal</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Pranjal Mittal · Built with GitHub Pages</div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
