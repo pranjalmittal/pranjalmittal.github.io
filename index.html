@@ -11,14 +11,14 @@
   <meta property="og:type" content="website" />
   <style>
     :root {
-      --bg: #0b0f19;
-      --bg-2: #121826;
-      --card: #161d2e;
-      --text: #e6e9f2;
-      --muted: #9aa4bf;
-      --accent: #6ea8fe;
-      --accent-2: #a78bfa;
-      --border: #24304a;
+      --bg: #f7f9fc;
+      --bg-2: #eef2f8;
+      --card: #ffffff;
+      --text: #1a2033;
+      --muted: #5a6480;
+      --accent: #2563eb;
+      --accent-2: #7c3aed;
+      --border: #dde3ee;
       --radius: 14px;
     }
     * { box-sizing: border-box; }
@@ -36,7 +36,7 @@
     header {
       position: sticky; top: 0; z-index: 10;
       backdrop-filter: blur(10px);
-      background: rgba(11, 15, 25, 0.7);
+      background: rgba(247, 249, 252, 0.75);
       border-bottom: 1px solid var(--border);
     }
     .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
@@ -50,7 +50,7 @@
       margin: 0 auto 24px;
       background: linear-gradient(135deg, var(--accent), var(--accent-2));
       display: flex; align-items: center; justify-content: center;
-      font-size: 40px; font-weight: 700; color: #0b0f19;
+      font-size: 40px; font-weight: 700; color: #ffffff;
       box-shadow: 0 0 0 4px var(--bg), 0 0 0 6px var(--border);
     }
     h1 { font-size: 44px; margin: 0 0 8px; letter-spacing: -0.5px; }
@@ -63,7 +63,7 @@
       transition: transform 0.15s ease, border-color 0.15s ease;
     }
     .btn:hover { transform: translateY(-1px); border-color: var(--accent); text-decoration: none; }
-    .btn.primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #0b0f19; border: none; }
+    .btn.primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #ffffff; border: none; }
     section { padding: 56px 0; }
     h2 { font-size: 26px; margin: 0 0 24px; }
     .grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
@@ -78,7 +78,7 @@
     .tags { display: flex; flex-wrap: wrap; gap: 6px; }
     .tag {
       font-size: 12px; padding: 3px 9px; border-radius: 999px;
-      background: rgba(110, 168, 254, 0.12); color: var(--accent);
+      background: rgba(37, 99, 235, 0.10); color: var(--accent);
       border: 1px solid rgba(110, 168, 254, 0.25);
     }
     .skills { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -117,6 +117,7 @@
       <p class="tagline">Software developer · Java · Go · CLI tools · open source</p>
       <div class="cta">
         <a class="btn primary" href="https://github.com/pranjalmittal" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/mittalpranjal/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn" href="#projects">View projects</a>
       </div>
     </section>
@@ -181,6 +182,7 @@
       </p>
       <div class="cta" style="justify-content:flex-start;">
         <a class="btn primary" href="https://github.com/pranjalmittal" target="_blank" rel="noopener">github.com/pranjalmittal</a>
+        <a class="btn" href="https://www.linkedin.com/in/mittalpranjal/" target="_blank" rel="noopener">linkedin.com/in/mittalpranjal</a>
       </div>
     </section>
   </main>
