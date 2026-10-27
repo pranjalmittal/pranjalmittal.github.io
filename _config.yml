@@ -2,19 +2,21 @@
 # site.title
 
 title: Pranjal Mittal
-description: Software Architect: high-scale backend platforms, distributed systems, cloud infrastructure, AI.
+description: "Software Architect: high-scale backend platforms, distributed systems, cloud infrastructure, AI."
 url: "https://pranjalmittal.github.io"
 # baseurl: "/jekyllBear" # the subpath of your site, e.g. /blog/
 
-theme: jekyll-bear-theme
+remote_theme: knhash/jekyllBear
 
 #########################
 # more settings
 
 plugins:
+  - jekyll-remote-theme
   - jekyll-redirect-from
 
 whitelist:
+  - jekyll-remote-theme
   - jekyll-redirect-from
 
 markdown: kramdown
