@@ -1,0 +1,8 @@
+# Life in Weeks events data for jekyllBear theme
+# Format:
+# 'YYYY-MM-DD':
+#   - name: "Event name"
+#     desc: "Optional description shown in tooltip"
+#     category: "category_name"
+#     link: "https://optional-link.com"
+#     tags: ["tag1", "tag2"]
