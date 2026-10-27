@@ -58,8 +58,3 @@ Life: /life
 # Add general links to site pages here
 links:
   # Resume: /assets/resume.pdf
-
-# Add links for more focus here
-special_links:
-  "GitHub": https://github.com/pranjalmittal
-  "LinkedIn": https://www.linkedin.com/in/mittalpranjal/
